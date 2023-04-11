@@ -1,0 +1,16 @@
+<div class="wrapper">
+  <div class="control">
+    <input
+      type="text"
+      class="input"
+      [(ngModel)]="searchInput"
+      (ngModelChange)="searchByCriteria()"
+      list="listItem"
+    />
+  </div>
+  <div class="list is-hoverable">
+    <datalist id="listItem">
+      <option *ngFor="let item of itemList" [value]="item">{{ item }}</option>
+    </datalist>
+  </div>
+</div>
