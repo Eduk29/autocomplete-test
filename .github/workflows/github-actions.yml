@@ -22,7 +22,7 @@ jobs:
 
       - name: Deploy vercel
         if: success()
-        uses: amondnet/vercel-action@latest
+        uses: amondnet/vercel-action@v20
         with:
           vercel-token: ${{ secrets.VERCEL_TOKEN }} # Required
           vercel-args: "--prod" #Optional
