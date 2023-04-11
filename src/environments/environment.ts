@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  urlAPI: 'http://localhost:3000/api'
+  // urlAPI: 'http://localhost:3000/api'
+  urlAPI: 'https://autocomplete-test-api.vercel.app/api'
 };
 
 /*
